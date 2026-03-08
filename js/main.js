@@ -40,11 +40,3 @@ window.addEventListener('scroll', () => {
     }
   });
 });
-
-const form = document.querySelector('.contacto__form');
-
-form.addEventListener('submit', (e) => {
-  e.preventDefault();
-  alert('¡Mensaje enviado! Me pondré en contacto pronto.');
-  form.reset();
-});
