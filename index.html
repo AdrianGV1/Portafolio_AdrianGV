@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AdriánGV — Full Stack Web Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="navbar__container">
+      <a href="#hero" class="navbar__logo">AdriánGV</a>
+      <button class="navbar__hamburger" id="hamburger" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="navbar__links" id="nav-links">
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="hero" id="hero">
+    <div class="hero__content">
+      <h1 class="hero__title">Hola, soy Adrián</h1>
+      <h2 class="hero__subtitle">Full Stack Web Developer</h2>
+      <p class="hero__description">Desarrollo experiencias web modernas, rápidas y receptivas. Me apasiona el código limpio y el diseño funcional.</p>
+      <div class="hero__buttons">
+        <a href="#proyectos" class="btn btn--primary">Ver proyectos</a>
+        <a href="#contacto" class="btn btn--outline">Contáctame</a>
+      </div>
+    </div>
+    <div class="hero__avatar">
+      <div class="hero__avatar-circle">
+        <img src="img/Avatar.JPEG" alt="Adrián GV" />
+      </div>
+    </div>
+  </section>
+
+  <section class="sobre-mi" id="sobre-mi">
+    <div class="container">
+      <h2 class="section__title">Sobre mí</h2>
+      <p class="sobre-mi__text">Soy estudiante de Ingeniería en Sistemas apasionado por el desarrollo web. Me especializo en construir aplicaciones web completas usando tecnologías modernas como React, Node.js y JavaScript.</p>
+      <div class="sobre-mi__stats">
+        <div class="stat-card">
+          <span class="stat-card__number">5+</span>
+          <span class="stat-card__label">Tecnologías dominadas</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-card__number">3+</span>
+          <span class="stat-card__label">Proyectos completados</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-card__number">2+</span>
+          <span class="stat-card__label">Años estudiando</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="habilidades" id="habilidades">
+    <div class="container">
+      <h2 class="section__title">Habilidades</h2>
+      <div class="habilidades__grid">
+        <div class="habilidades__grupo">
+          <h3 class="habilidades__categoria">Frontend</h3>
+          <div class="habilidades__tags">
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">React</span>
+          </div>
+        </div>
+        <div class="habilidades__grupo">
+          <h3 class="habilidades__categoria">Backend</h3>
+          <div class="habilidades__tags">
+            <span class="tag">Node.js</span>
+            <span class="tag">Express</span>
+            <span class="tag">Python</span>
+            <span class="tag">SQL</span>
+          </div>
+        </div>
+        <div class="habilidades__grupo">
+          <h3 class="habilidades__categoria">Herramientas</h3>
+          <div class="habilidades__tags">
+            <span class="tag">Git</span>
+            <span class="tag">GitHub</span>
+            <span class="tag">Figma</span>
+            <span class="tag">VS Code</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="proyectos" id="proyectos">
+    <div class="container">
+      <h2 class="section__title">Proyectos</h2>
+      <div class="proyectos__grid">
+
+        <div class="proyecto-card">
+          <div class="proyecto-card__imagen">
+            <img src="img/ComputadoraCelular.png" alt="Task Manager App" />
+            </div>
+          <div class="proyecto-card__body">
+            <h3 class="proyecto-card__titulo">Task Manager App</h3>
+            <p class="proyecto-card__desc">Aplicación web para gestionar tareas con autenticación de usuarios.</p>
+            <div class="proyecto-card__tags">
+              <span class="tag tag--small">React</span>
+              <span class="tag tag--small">Node.js</span>
+              <span class="tag tag--small">MongoDB</span>
+            </div>
+            <div class="proyecto-card__botones">
+              <a href="taskManager.html" class="btn btn--primary btn--small">Ver demo</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="proyecto-card">
+          <div class="proyecto-card__imagen">
+            <img src="img/UsuarioCandado.png" alt="Portfolio Website" />
+          </div>
+          <div class="proyecto-card__body">
+            <h3 class="proyecto-card__titulo">Portfolio Website</h3>
+            <p class="proyecto-card__desc">Sitio web personal con diseño responsivo y adaptado.</p>
+            <div class="proyecto-card__tags">
+              <span class="tag tag--small">HTML5</span>
+              <span class="tag tag--small">CSS3</span>
+              <span class="tag tag--small">JavaScript</span>
+            </div>
+            <div class="proyecto-card__botones">
+              <a href="portfolio.html" class="btn btn--primary btn--small">Ver demo</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="proyecto-card">
+          <div class="proyecto-card__imagen">
+            <img src="img/TiendaOnline.png" alt="E-Commerce UI" />
+          </div>
+          <div class="proyecto-card__body">
+            <h3 class="proyecto-card__titulo">E-Commerce UI</h3>
+            <p class="proyecto-card__desc">Interfaz de tienda en línea con carrito de compras incluido.</p>
+            <div class="proyecto-card__tags">
+              <span class="tag tag--small">React</span>
+              <span class="tag tag--small">CSS3</span>
+              <span class="tag tag--small">Figma</span>
+            </div>
+            <div class="proyecto-card__botones">
+              <a href="ecommerce.html" class="btn btn--primary btn--small">Ver demo</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="contacto" id="contacto">
+    <div class="container">
+      <h2 class="section__title">Contacto</h2>
+      <p class="contacto__subtitulo">¿Tienes un proyecto en mente? ¡Hablemos!</p>
+      <div class="contacto__redes">
+        <div class="red-social">
+          <a href="mailto:adrian.granados.vargas@est.una.ac.cr" class="red-social__icono">@</a>
+          <span class="red-social__nombre">Email</span>
+        </div>
+        <div class="red-social">
+          <a href="https://www.linkedin.com/in/adri%C3%A1n-granados-a037b83b4/" class="red-social__icono">in</a>
+          <span class="red-social__nombre">LinkedIn</span>
+        </div>
+        <div class="red-social">
+          <a href="https://github.com/AdrianGV1" class="red-social__icono">&lt;&gt;</a>
+          <span class="red-social__nombre">GitHub</span>
+        </div>
+      </div>
+      <form class="contacto__form" action="https://formspree.io/f/mojkvlza" method="POST">
+        <input
+          type="text"
+          name="nombre"
+          class="form__input"
+          placeholder="Nombre completo"
+          required
+        />
+        <input
+          type="email"
+          name="email"
+          class="form__input"
+          placeholder="Correo electrónico"
+          required
+        />
+        <textarea
+          name="message"
+          class="form__textarea"
+          placeholder="Tu mensaje aquí"
+          required
+        ></textarea>
+        <button type="submit" class="btn btn--primary btn--full">
+          Enviar mensaje
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__container">
+      <p class="footer__copy">© 2025 AdriánGV — Full Stack Web Developer</p>
+      <div class="footer__links">
+        <a href="https://github.com/AdrianGV1">GitHub</a>
+        <a href="https://www.linkedin.com/in/adri%C3%A1n-granados-a037b83b4/">LinkedIn</a>
+        <a href="mailto:adrian.granados.vargas@est.una.ac.cr">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>E-Commerce UI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/ecommerce.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="navbar__container">
+      <span class="navbar__logo">🛒 ShopUI</span>
+      <div class="navbar__actions">
+        <span class="cart-icon">🛒 <span class="cart-count">3</span></span>
+        <a href="index.html" class="btn btn--outline">← Volver al portafolio</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero__content">
+      <p class="hero__tag">🔥 Oferta especial — 30% OFF</p>
+      <h1>Descubre los mejores <span>productos</span></h1>
+      <p class="hero__desc">Explora nuestra colección exclusiva con los mejores precios del mercado. Envío gratis en compras mayores a $50.</p>
+      <button class="btn btn--primary">Ver productos</button>
+    </div>
+  </header>
+
+  <section class="productos">
+    <h2>Productos destacados</h2>
+    <div class="productos__grid">
+
+      <div class="producto-card">
+        <div class="producto-card__imagen">
+          <span class="producto-card__badge">NUEVO</span>
+          <span class="producto-card__emoji">💻</span>
+        </div>
+        <div class="producto-card__body">
+          <h3>Laptop Pro X</h3>
+          <p>Alto rendimiento para desarrolladores y diseñadores.</p>
+          <div class="producto-card__footer">
+            <span class="precio">$1,299</span>
+            <button class="btn btn--primary btn--small">Agregar 🛒</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="producto-card">
+        <div class="producto-card__imagen">
+          <span class="producto-card__badge producto-card__badge--sale">-30%</span>
+          <span class="producto-card__emoji">🎧</span>
+        </div>
+        <div class="producto-card__body">
+          <h3>Auriculares Wireless</h3>
+          <p>Sonido premium con cancelación de ruido activa.</p>
+          <div class="producto-card__footer">
+            <div>
+              <span class="precio">$89</span>
+              <span class="precio--tachado">$129</span>
+            </div>
+            <button class="btn btn--primary btn--small">Agregar 🛒</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="producto-card">
+        <div class="producto-card__imagen">
+          <span class="producto-card__emoji">⌨️</span>
+        </div>
+        <div class="producto-card__body">
+          <h3>Teclado Mecánico</h3>
+          <p>Respuesta táctil perfecta para programadores.</p>
+          <div class="producto-card__footer">
+            <span class="precio">$149</span>
+            <button class="btn btn--primary btn--small">Agregar 🛒</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="producto-card">
+        <div class="producto-card__imagen">
+          <span class="producto-card__badge producto-card__badge--sale">-20%</span>
+          <span class="producto-card__emoji">🖱️</span>
+        </div>
+        <div class="producto-card__body">
+          <h3>Mouse Ergonómico</h3>
+          <p>Diseño ergonómico para largas jornadas de trabajo.</p>
+          <div class="producto-card__footer">
+            <div>
+              <span class="precio">$59</span>
+              <span class="precio--tachado">$75</span>
+            </div>
+            <button class="btn btn--primary btn--small">Agregar 🛒</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="carrito">
+    <h2>🛒 Tu carrito</h2>
+    <div class="carrito__items">
+      <div class="carrito__item">
+        <span class="carrito__item-emoji">💻</span>
+        <div class="carrito__item-info">
+          <span class="carrito__item-name">Laptop Pro X</span>
+          <span class="carrito__item-price">$1,299</span>
+        </div>
+        <div class="carrito__item-qty">
+          <button>-</button>
+          <span>1</span>
+          <button>+</button>
+        </div>
+      </div>
+      <div class="carrito__item">
+        <span class="carrito__item-emoji">🎧</span>
+        <div class="carrito__item-info">
+          <span class="carrito__item-name">Auriculares Wireless</span>
+          <span class="carrito__item-price">$89</span>
+        </div>
+        <div class="carrito__item-qty">
+          <button>-</button>
+          <span>1</span>
+          <button>+</button>
+        </div>
+      </div>
+      <div class="carrito__item">
+        <span class="carrito__item-emoji">⌨️</span>
+        <div class="carrito__item-info">
+          <span class="carrito__item-name">Teclado Mecánico</span>
+          <span class="carrito__item-price">$149</span>
+        </div>
+        <div class="carrito__item-qty">
+          <button>-</button>
+          <span>1</span>
+          <button>+</button>
+        </div>
+      </div>
+    </div>
+    <div class="carrito__total">
+      <span>Total:</span>
+      <span class="carrito__total-precio">$1,537</span>
+    </div>
+    <button class="btn btn--primary btn--full">Proceder al pago →</button>
+  </section>
+
+  <section class="tech-stack">
+    <h2>Tecnologías utilizadas</h2>
+    <div class="tech-stack__grid">
+      <div class="tech-badge">⚛️ React</div>
+      <div class="tech-badge">🎨 CSS3</div>
+      <div class="tech-badge">🖌️ Figma</div>
+      <div class="tech-badge">📐 Flexbox</div>
+      <div class="tech-badge">🔲 CSS Grid</div>
+      <div class="tech-badge">⚡ JavaScript</div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2025 ShopUI — Proyecto de portafolio por AdriánGV</p>
+    <a href="index.html">← Volver al portafolio</a>
+  </footer>
+
+</body>
+</html>

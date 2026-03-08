@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task Manager App</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/taskManager.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="navbar__container">
+      <span class="navbar__logo">✅ TaskManager</span>
+      <a href="index.html" class="btn btn--outline">← Volver al portafolio</a>
+    </div>
+  </nav>
+
+  <header class="app-header">
+    <div class="app-header__content">
+      <h1>Gestiona tus tareas <span>fácilmente</span></h1>
+      <p>Organiza, prioriza y completa tus tareas diarias con nuestra plataforma intuitiva.</p>
+      <div class="app-header__buttons">
+        <button class="btn btn--primary">Comenzar gratis</button>
+        <button class="btn btn--outline">Ver demo</button>
+      </div>
+    </div>
+    <div class="app-header__preview">
+      <div class="task-preview">
+        <div class="task-preview__header">
+          <span>Mis Tareas</span>
+          <span class="badge">4 pendientes</span>
+        </div>
+        <div class="task-item task-item--done">
+          <span class="task-item__check">✓</span>
+          <span class="task-item__text">Diseñar mockups en Figma</span>
+        </div>
+        <div class="task-item task-item--done">
+          <span class="task-item__check">✓</span>
+          <span class="task-item__text">Configurar base de datos</span>
+        </div>
+        <div class="task-item">
+          <span class="task-item__check">○</span>
+          <span class="task-item__text">Implementar autenticación</span>
+        </div>
+        <div class="task-item">
+          <span class="task-item__check">○</span>
+          <span class="task-item__text">Crear API REST endpoints</span>
+        </div>
+        <div class="task-item">
+          <span class="task-item__check">○</span>
+          <span class="task-item__text">Deploy en servidor</span>
+        </div>
+        <div class="task-item">
+          <span class="task-item__check">○</span>
+          <span class="task-item__text">Testing y QA</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="features">
+    <h2>¿Por qué TaskManager?</h2>
+    <div class="features__grid">
+      <div class="feature-card">
+        <span class="feature-card__icon">🔐</span>
+        <h3>Autenticación segura</h3>
+        <p>Inicio de sesión con JWT y OAuth. Tus datos siempre protegidos.</p>
+      </div>
+      <div class="feature-card">
+        <span class="feature-card__icon">📋</span>
+        <h3>Gestión de proyectos</h3>
+        <p>Organiza tus tareas por proyectos, etiquetas y prioridades.</p>
+      </div>
+      <div class="feature-card">
+        <span class="feature-card__icon">📊</span>
+        <h3>Estadísticas en tiempo real</h3>
+        <p>Visualiza tu progreso con gráficos y métricas detalladas.</p>
+      </div>
+      <div class="feature-card">
+        <span class="feature-card__icon">🔔</span>
+        <h3>Recordatorios</h3>
+        <p>Notificaciones automáticas para que nunca olvides una tarea.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="tech-stack">
+    <h2>Tecnologías utilizadas</h2>
+    <div class="tech-stack__grid">
+      <div class="tech-badge">⚛️ React</div>
+      <div class="tech-badge">🟢 Node.js</div>
+      <div class="tech-badge">🍃 MongoDB</div>
+      <div class="tech-badge">🔑 JWT Auth</div>
+      <div class="tech-badge">🎨 CSS3</div>
+      <div class="tech-badge">📦 Express</div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2025 TaskManager — Proyecto de portafolio por AdriánGV</p>
+    <a href="index.html">← Volver al portafolio</a>
+  </footer>
+
+</body>
+</html>
